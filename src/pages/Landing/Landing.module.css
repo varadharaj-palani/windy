@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../assets/images/bg/bg-image.png);
+    background-size: cover;
+    /* or background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #670a34;
+}
+
+.letter {
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.bounceIn {
+    animation-name: bounceIn;
+}
+
+.page_wrapper_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .landing_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--mb-6) 0;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .landingFormContainer {
+    flex-basis: 50%;
+    width: 80%;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    /*background-image: linear-gradient(to bottom right, #440bd48e, #ff207991);*/
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    box-shadow: 0 4px 8px 5px rgba(255, 245, 245, 0.5), 0 6px 20px 3px rgba(245, 245, 245, 0.6);
+  }
+  
+  .page_wrapper {  
+    width: 100%;
+    min-height: 86vh;
+    display: flex;
+    justify-content: center;
+    /*padding: var(--mb-6) 0;*/
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .landing_container {   
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #000;*/
+    border-radius: 1rem;
+    padding: var(--mb-4) var(--mb-6);
+  }
+
+@media (max-width: 768px) {
+
+    /* Mobile phones */
+    .logo {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes wind {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
